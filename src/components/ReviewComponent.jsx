@@ -17,7 +17,7 @@ const ReviewComponent = () => {
   return (
     <div className="flex flex-col">
       {comments.slice(0, 10).map((comment) => (
-        <div key={comment.id} className="bg-white my-2 p-2 rounded-md">
+        <div key={comment.id} className="bg-white p-2 rounded-xl">
           <h4>{comment.name}</h4>
           <span>{comment.email}</span>
           <p>{comment.body}</p>

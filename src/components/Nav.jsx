@@ -1,9 +1,16 @@
 // Icons
+import { useStateContext } from "../context/StateProvider";
 import { IoNotificationsOutline, AiOutlineMessage } from "../data/icons";
 
 const Nav = () => {
+  const { isOpen } = useStateContext();
+
   return (
-    <nav className="flex  items-center justify-between mx-2">
+    <nav
+      className={`flex fixed top-0 left-2 right-2 ${
+        isOpen ? "sm:left-[234px]" : "sm:left-[110px]"
+      } sm:right-2 z-10 bg-white px-3 rounded-lg p-2 shadow-xl items-center justify-between overflow-hidden`}
+    >
       <h2 className="flex items-center gap-2 sm:text-lg lg:text-2xl font-extrabold">
         Hello, James!
         <img src="/img/hand.png" alt="hand" className="w-6 sm:w-8" />

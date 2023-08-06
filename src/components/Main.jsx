@@ -16,7 +16,7 @@ const Main = () => {
         }`}
       >
         <Nav />
-        <main>
+        <main className="mt-12">
           <Section1 />
           <Section2 />
           <Section3 />

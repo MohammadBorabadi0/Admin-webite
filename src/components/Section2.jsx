@@ -1,3 +1,4 @@
+import { pieData1, pieData2 } from "../data/data";
 import AreaChartComponent from "./AreaChartComponent";
 import PieChartComponent from "./PieChartComponent";
 
@@ -9,11 +10,13 @@ const Section2 = () => {
           title="Total Order"
           startAngle={360}
           fill="#22c55e"
+          data={pieData1}
         />
         <PieChartComponent
           title="Total Revenue"
           startAngle={360}
           fill="#ea580c"
+          data={pieData2}
         />
       </section>
         <AreaChartComponent />

@@ -90,13 +90,22 @@ export const areaChartData = [
     },
 ];
 
-export const pieData = [
+export const pieData1 = [
     { name: 'Group A', value: 400 },
     { name: 'Group B', value: 300 },
     { name: 'Group C', value: 300 },
     { name: 'Group D', value: 200 },
     { name: 'Group E', value: 278 },
     { name: 'Group F', value: 189 },
+];
+
+export const pieData2 = [
+    { name: 'Group A', value: 100 },
+    { name: 'Group B', value: 90 },
+    { name: 'Group C', value: 50 },
+    { name: 'Group D', value: 80 },
+    { name: 'Group E', value: 100 },
+    { name: 'Group F', value: 90 },
 ];
 
 export const barChartData = [

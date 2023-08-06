@@ -4,7 +4,7 @@ import { ordersData } from "../data/data";
 const { Column } = Table;
 
 const TableComponent = () => (
-  <div className="mx-2 bg-white rounded-xl">
+  <div className="bg-white rounded-xl shadow-xl overflow-hidden">
     <h2 className="px-4 py-3 text-xl font-semibold">Latest Sales</h2>
     <Table dataSource={ordersData} className="px-3 py-1">
       <Column title="Name" dataIndex="name" key="name" />

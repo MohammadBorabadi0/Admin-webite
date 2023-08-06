@@ -1,5 +1,4 @@
 import Main from "./components/Main";
-import Section3 from "./components/Section3";
 import Sidebar from "./components/Sidebar";
 import StateProvider from "./context/StateProvider";
 import "react-circular-progressbar/dist/styles.css";

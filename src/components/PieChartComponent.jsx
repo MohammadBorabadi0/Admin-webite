@@ -1,7 +1,6 @@
 import { Pie, PieChart, ResponsiveContainer } from "recharts";
-import { pieData } from "../data/data";
 
-const PieChartComponent = ({ title, startAngle, fill }) => {
+const PieChartComponent = ({ title, startAngle, fill, data }) => {
   return (
     <section className="flex flex-col gap-5 items-center rounded-xl bg-white shadow-xl">
       <div className="p-4 w-full">
@@ -14,7 +13,7 @@ const PieChartComponent = ({ title, startAngle, fill }) => {
               dataKey="value"
               startAngle={startAngle}
               endAngle={0}
-              data={pieData}
+              data={data}
               cx="50%"
               cy="50%"
               outerRadius={65}
