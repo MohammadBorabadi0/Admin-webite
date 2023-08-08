@@ -4,7 +4,7 @@ const PieChartComponent = ({ title, startAngle, fill, data }) => {
   return (
     <section className="flex flex-col gap-5 items-center rounded-xl bg-white shadow-xl">
       <div className="p-4 w-full">
-        <h2 className="text-lg font-semibold">{title}</h2>
+        <h2 className="text-lg font-bold">{title}</h2>
       </div>
       <div>
         <ResponsiveContainer width={220} height={220}>

@@ -159,3 +159,13 @@ export const ordersData = [
     { id: 15, name: 'Anna Summer', orderAmount: 200, status: 'delivered', image: '/img/persons/4.jpg', date: '16 Jun 2023', amount: 1000, dateamount: 7 },
     { id: 16, name: 'David Astee', orderAmount: 900, status: 'un delivered', image: '/img/persons/5.jpg', date: '23 Apr 2023', amount: 172, dateamount: 10 },
 ]
+
+export const chanels = [
+    {name:"Instagram",icon:'img/icons/instagram2.svg',amount:10},
+    {name:"Behance",icon:'img/icons/behance.svg',amount:7},
+    {name:"Shopify",icon:'img/icons/shopify.svg',amount:-4},
+    {name:"Facebook",icon:'img/icons/facebook.svg',amount:2},
+    {name:"Pinterest",icon:'img/icons/pinterest.svg',amount:-9},
+    {name:"Dribbble",icon:'img/icons/dribbble.svg',amount:1},
+    {name:"Telegram",icon:'img/icons/telegram.svg',amount:-5},
+]

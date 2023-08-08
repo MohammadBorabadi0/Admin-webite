@@ -1,10 +1,10 @@
-import { useStateContext } from "../context/StateProvider";
+import { useStateContext } from "./src/context/StateProvider";
 
-import Nav from "./Nav";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
+import Nav from "./src/components/Nav";
+import Section1 from "./src/components/Section1";
+import Section2 from "./src/components/Section2";
+import Section3 from "./src/components/Section3";
+import Section4 from "./src/components/Section4";
 
 const Main = () => {
   const { isOpen } = useStateContext();

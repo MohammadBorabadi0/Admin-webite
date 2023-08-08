@@ -12,7 +12,7 @@ const CircularProgress = ({ title, description, qty, value, pathColor }) => {
   return (
     <div className="flex flex-1 h-52 justify-between items-center px-4 py-2 shadow-md rounded-xl bg-white">
       <div className="text-sm flex flex-col justify-between h-full py-4 font-semibold">
-        <h4 className="font-extrabold text-3xl">{title}</h4>
+        <h4 className="font-bold text-xl lg:text-3xl">{title}</h4>
         <p className="text-slate-500">{description}</p>
         <span className="text-xl">{qty}</span>
       </div>

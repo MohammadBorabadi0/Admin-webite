@@ -10,7 +10,7 @@ const AreaChartComponent = () => {
   return (
     <section className="flex flex-col gap-3 pb-2 shadow-lg rounded-lg bg-white">
       <div className="flex justify-between items-center px-3 border-b">
-        <div className="p-3 font-semibold">
+        <div className="p-2 font-bold text-lg">
           <h2>Earning This Month</h2>
         </div>
         <SlOptionsVertical className="cursor-pointer" />
