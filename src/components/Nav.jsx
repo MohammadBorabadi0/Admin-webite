@@ -5,29 +5,13 @@ import { IoNotificationsOutline, AiOutlineMessage } from "../data/icons";
 import { useEffect } from "react";
 
 const Nav = () => {
-  const { isOpen } = useStateContext();
-  const navRef = useRef();
-
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.scrollY > 20) {
-        navRef.current.className = `${
-          isOpen ? "sm:left-[234px]" : "sm:left-[110px]"
-        } flex fixed top-4 h-[80px] z-10 bg-white px-3 rounded-lg px-2 shadow-xl transition-all duration-150 items-center justify-between bg-white right-2`;
-      } else {
-        navRef.current.className = `${
-          isOpen ? "sm:left-[234px]" : "sm:left-[110px]"
-        } flex z-10 bg-red-50 px-3 rounded-lg p-2 items-center justify-between transition-all duration-150 mr-2`;
-      }
-    };
-  }, [navRef,isOpen]);
+  const { isOpen, ref } = useStateContext();
 
   return (
     <nav
-      ref={navRef}
-      className={`flex ${
-        isOpen ? "sm:left-[234px]" : "sm:left-[110px]"
-      } z-10 bg-red-50 px-3 rounded-lg p-2 items-center justify-between overflow-hidden mr-2`}
+      className={`flex ${isOpen ? "sm:left-[234px]" : "sm:left-[110px]"} ${
+        ref && "fixed top-0 right-0 bg-white shadow-sm"
+      } z-10 bg-red-50 px-3 p-2 items-center justify-between overflow-hidden mr-2`}
     >
       <h2 className="flex items-center gap-2 sm:text-lg lg:text-2xl font-extrabold">
         Hello, Sara!

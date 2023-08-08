@@ -19,13 +19,13 @@ const data = [
 ];
 
 const Sidebar = () => {
-  const { isOpen, setIsOpen } = useStateContext();
+  const { isOpen, setIsOpen, ref } = useStateContext();
 
   return (
     <aside
-      className={`${
-        isOpen ? "w-52" : "w-20"
-      } hidden sm:block bg-white sm:mx-2 my-4 rounded-3xl fixed h-[95%] shadow-2xl transition-all duration-150`}
+      className={`${isOpen ? "w-52" : "w-20"} my-4 rounded-3xl ${
+        ref && "top-0 bg-white shadow-sm my-0 rounded-none rounded-b-3xl"
+      } hidden sm:block bg-white sm:mx-2 fixed h-[95%] shadow-2xl transition-all duration-150`}
     >
       {isOpen && (
         <div className="flex flex-col gap-2 justify-center items-center mt-10">
