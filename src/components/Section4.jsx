@@ -15,7 +15,7 @@ const Section4 = () => {
         <p className="text-sm font-semibold text-gray-500">Your statistics for 1 week period.</p>
       </div>
       <section className="flex mt-2">
-        <Swiper {...settings} className="py-4">
+        <Swiper {...settings} className="py-4 overflow-x-scroll">
           {chanels.map((item, index) => (
             <SwiperSlide
               key={index}
